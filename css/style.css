@@ -4,26 +4,73 @@
     box-sizing: border-box;
 }
 
-header{
-    position: relative;
+body{
     background-color: transparent;
-    height: 10vh;
+}
+
+header{
+    position: fixed;
+    z-index: 1;
+    background-color: transparent;
+    height: 5vh;
     width: 100vw;
+    min-height: 60px;
 }
 
 #toolbar{
     position: absolute;
-    right: 20px;
+    right: 30px;
 }
 
 #toolbar li{
     display: inline-block;
-}
-
-#toolbar .tool{
-    padding: 20px;
+    font-size: 25px;
 }
 
 #toolbar li a{
     text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.tool{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#toolbar:hover{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.shoe-section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.bg-color-red{
+    background-color: red;
+}
+
+.bg-color-yellow{
+    background-color: yellow;
+}
+
+.bg-color-green{
+    background-color: green;
+}
+
+.shoe-section img,
+.shoe-section h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    padding-top: 55vh;
 }
