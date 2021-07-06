@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    background-color: transparent;
+    height: 10vh;
+    width: 100vw;
+}
+
+#toolbar{
+    position: absolute;
+    right: 20px;
+}
+
+#toolbar li{
+    display: inline-block;
+}
+
+#toolbar .tool{
+    padding: 20px;
+}
+
+#toolbar li a{
+    text-decoration: none;
+}
